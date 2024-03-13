@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역 관련 태그</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        span{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            /*인라인 요소에는 대부분 가로, 세로 적용 불가*/
+        }
+    </style>
+</head>
+<body>
+    <!--
+        블럭요소 : 한 줄 단위로 영역을 차지함
+                줄바꿈이 적용되어 이미 존재하는 태그의 다음줄에 다음영역이 잡힘
+                (p, pre, "div", ...)
+        인라인요소 : content(내용) 영역에 해당하는 부분만 영역을 차지하는 요소
+                줄바꿈이 적용되지 않아 다음영역이 바로 옆에으로 잡힘
+                (b, mark, s, img, "span", ...)
+    -->         
+
+    <h1>영역 관련 태그</h1>
+    <h2>div태그와 span 태그의 차이점 1: 줄바꿈 적용</h2>
+    <h3>div태그</h3>
+    <p>div태그는 블록요소로 한 줄 단위로 영역을 자지(이미 존재하는 태그 다음줄의 영역이 잡힘</p>
+
+    <div style="background: red;">첫번째 영역</div>
+    <div style="background: orange;">두번째 영역</div>
+    <div style="background: yellow;">세번째 영역</div>
+    
+    <h3>span태그</h3>
+    <p>인라인 요소로 content영역만 차지(줄바꿈이 발생하지 않고 옆으로 영역이 잡힘)</p>
+    <span style="background: red;">첫번째 영역</span>
+    <span style="background: orange;">두번째 영역</span>
+    <span style="background: yellow;">세번째 영역</span>
+    
+        <h2>div태그와 span태그의 차이점2 : 영역지정방식</h2>
+
+        <h3>div 태그 : 사각형 박스로 영역을 지정</h3>
+        <div>
+            한화는 7일 대전한화생명이글스파크에서 자체 평가전을 치렀다. 류현진이 선발 출격하는 홈팀은 좌익수 최인호-중견수 페라자-1루수 안치홍-3루수 노시환-지명타자 김인환-포수 최재훈-유격수 이도윤-2루수 황영묵-우익수 이상혁-지명타자 장규현으로 선발 라인업을 구성했다. 김민우와 정이황이 등판 대기한다.     
+        </div>
+        <br><br><br><br><br>
+
+        <h3>span태그 : 문장 단위로 영역을 지정</h3>
+        <span>
+            한화는 7일 대전한화생명이글스파크에서 자체 평가전을 치렀다. 류현진이 선발 출격하는 홈팀은 좌익수 최인호-중견수 페라자-1루수 안치홍-3루수 노시환-지명타자 김인환-포수 최재훈-유격수 이도윤-2루수 황영묵-우익수 이상혁-지명타자 장규현으로 선발 라인업을 구성했다. 김민우와 정이황이 등판 대기한다.   
+        </span>
+        <br><br><br><br><br>
+
+        <hr>
+
+        <h1>iframe</h1>
+        <p>웹 문서 안에 다른 웹 페이지를 추가ㅏ하는 태그(인라인요소)</p>
+
+        <iframe src="04_이미지및멀티미디어.html" width="600" height="800"></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ocg6L7JnUpA?si=SVBltBtRBDqESPRt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+</body>
+</html>
